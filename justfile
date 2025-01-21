@@ -7,8 +7,8 @@ run:
 ssh:
     ssh root@localhost -p 2222
 
-deploy:
-    pdm run pyinfra inventory.py deploy.py
+deploy ENV:
+    pdm run pyinfra inventories/{{ENV}}.py deploy.py
 
 fmt:
-    pdm run ruff format *.py
+    pdm run ruff format **/*.py

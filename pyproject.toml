@@ -5,7 +5,7 @@ description = "Default template for PDM package"
 authors = [
     {name = "Kevin Denver", email = "1027637+ToastShaman@users.noreply.github.com"},
 ]
-dependencies = ["pyinfra>=3.2", "ruff>=0.9.2"]
+dependencies = ["pyinfra>=3.2", "ruff>=0.9.2", "requests>=2.32.3"]
 requires-python = "==3.13.*"
 readme = "README.md"
 license = {text = "MIT"}
